@@ -1,0 +1,26 @@
+#table.dataTable tbody tr {
+  background-color: unset;
+}
+#table.dataTable tbody tr .box-thumbnail {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+#table.dataTable tbody tr .box-thumbnail.cat{
+  width:40px;
+  height:40px;
+}
+#table.dataTable tbody tr .box-thumbnail.no-image {
+  background-color: blueviolet;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#table.dataTable tbody tr .box-thumbnail.no-image::before {
+  content: "No Image";
+  color: #fff;
+  font-size: 8px;
+}
+
+/*# sourceMappingURL=datatable.css.map */

@@ -1,0 +1,19 @@
+@mixin d_flex($justify-content:space-between, $align-item:center,$wrap:wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}
+
+@mixin d_gird_auto($minmax) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax($minmax,1fr));
+}
+
+@mixin num_text_row($row)
+{
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

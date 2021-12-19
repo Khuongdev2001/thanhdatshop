@@ -1,0 +1,56 @@
+#wrapper {
+    #content {
+        .box-account-info {
+            line-height: 1.5;
+            @include d-flex(space-between, unset, nowrap);
+            &>div {
+                padding: 20px 20px;
+            }
+            .account-info {
+                width: 70%;
+                border-right: 1px solid var(--dark-light);
+                &.account-address {
+                    padding: 0px;
+                    .box-btn-add {
+                        text-align: center;
+                        padding: 15px;
+                        border: 1px dotted var(--dark-light);
+                        span {
+                            padding-right: 10px;
+                        }
+                    }
+                    .list-address {
+                        .address-item {
+                            &[is-default] {
+                                .icon {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-action-right {
+                width: 30%;
+            }
+            form {
+                padding: 15px 0px;
+            }
+        }
+        .tab-action-right {
+            .icon,
+            .box-thumbnail {
+                display: inline-block;
+                width: 48px;
+            }
+            .box-socials {
+                .social-item {
+                    padding-bottom: 15px;
+                }
+            }
+            .box-flex {
+                @include d-flex;
+            }
+        }
+    }
+}

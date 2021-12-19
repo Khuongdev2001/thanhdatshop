@@ -1,0 +1,100 @@
+#wrapper {
+    #wp-content {
+        #wp-cart {
+            line-height: 1.5;
+            padding: 35px 0px;
+            .title {
+                font-size: 20px;
+                padding: 20px 0px;
+            }
+            #cart {
+                .table-cart {
+                    font-size: 13px;
+                    .table-head {
+                        @include d-flex;
+                        background-color: var(--light);
+                        padding: 10px 0px;
+                        border-radius: 5px;
+                    }
+                    .table-body,
+                    .table-body-mobile {
+                        .cart-item {
+                            padding: 25px 0px;
+                            @include d-flex;
+                            .col-1 {
+                                font-size: 13px;
+                                @include d-flex;
+                            }
+                            .col-3 {
+                                .form-group-qty {
+                                    .qty {
+                                        width: 120px;
+                                    }
+                                }
+                            }
+                            .product-thumbnail {
+                                display: inline-block;
+                                width: 75px;
+                                height: 75px;
+                            }
+                            .product-name {
+                                width: 75%;
+                                padding: 0px 10px;
+                                @include num_text_row(3);
+                            }
+                            .form-group-qty {
+                                margin: unset;
+                            }
+                        }
+                    }
+                    .col-table-1 {
+                        padding-left: 40px;
+                        width: 373px;
+                    }
+                    .col-table-2 {
+                        width: 100px;
+                    }
+                    .col-table-3 {
+                        width: 100px;
+                    }
+                    .col-table-4 {
+                        width: 100px;
+                    }
+                    .col-table-5 {
+                        width: 30px;
+                    }
+                }
+                .info-cart {
+                    .box-address,
+                    .box-total-price {
+                        padding: 10px 20px;
+                    }
+                    .box-address {
+                        margin-bottom: 10px;
+                        .box-flex:nth-child(2) {
+                            padding: 5px 0px;
+                            span:last-child {
+                                padding-left: 25px;
+                                border-left: 1px solid var(--dark-light);
+                            }
+                        }
+                    }
+                    .box-btn {
+                        padding-top: 20px;
+                    }
+                }
+            }
+            .box-empty-cart {
+                margin: 10px 0px;
+                padding: 30px 0px 60px 0px;
+                .box-logo {
+                    display: inline-block;
+                    width: 300px;
+                }
+                .subtitle {
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+}

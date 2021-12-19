@@ -1,0 +1,62 @@
+#toastr {
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index:1000000000;
+  }
+  #toastr .toastr {
+    background: #fff;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 2px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #00000017;
+    margin-bottom: 10px;
+  }
+  #toastr .toastr .toastr_icon {
+    padding: 5px;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    line-height: 1.1;
+    text-align: center;
+  }
+  #toastr .toastr .toastr_content {
+    padding: 10px;
+    line-height: 1.5;
+  }
+  #toastr .toastr .toastr_content .toastr_message {
+    color: #bcbdc0;
+  }
+  #toastr .toastr .toastr_btn_exit {
+    color: #bcbdc0;
+    font-size: 25px;
+  }
+  #toastr .toastr a {
+    color: black;
+    font-size: 20px;
+  }
+  #toastr .toastr.success {
+    border-left: 5px solid #47d764;
+  }
+  #toastr .toastr.success .toastr_icon {
+    background-color: #47d764;
+  }
+  #toastr .toastr.info {
+    border-left: 5px solid #2f86eb;
+  }
+  #toastr .toastr.info .toastr_icon {
+    background-color: #2f86eb;
+  }
+  #toastr .toastr.error {
+    border-left: 5px solid #ff4a59;
+  }
+  #toastr .toastr.error .toastr_icon {
+    background-color: #ff4a59;
+  }
+  
+  /*# sourceMappingURL=style.css.map */

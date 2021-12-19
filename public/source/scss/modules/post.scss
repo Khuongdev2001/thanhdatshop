@@ -1,0 +1,39 @@
+#wrapper {
+    #wp-content {
+        #content {
+            .box-post.post-slider {
+                position: relative;
+                .posts {
+                    overflow: auto;
+                    @include d-flex(none, center, nowrap);
+                    .post {
+                        width: 280px;
+                        min-width: 280px;
+                        margin: 15px 15px 15px 0px;
+                        flex: unset;
+                        .title {
+                            margin: 10px 0px;
+                            font-size: 18px;
+                            @include num_text_row(2);
+                        }
+                        .box-bottom {
+                            padding: 10px 0px;
+                            font-size: 12px;
+                            @include d-flex;
+                            font-weight: bold;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            .box-post.post-details {
+                .box-bottom {
+                    background-color: var(--yellow);
+                    align-items: center;
+                    padding: 5px 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

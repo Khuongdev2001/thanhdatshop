@@ -1,0 +1,143 @@
+#wrapper {
+    #wp-content {
+        #content {
+            .checkout {
+                padding: 30px 0px;
+            }
+            .box-top {
+                @include d-flex;
+                padding-bottom: 10px;
+                .box-logo {
+                    width: 120px;
+                    height: 80px;
+                    background-color: var(--dark-light);
+                    @include d-flex(center);
+                }
+                .box-process {
+                    counter-reset: step;
+                    width: 63%;
+                    text-align: center;
+                    z-index: 100;
+                    .process-item {
+                        position: relative;
+                        width: 25%;
+                        float: left;
+                        &::after {
+                            content: counter(step);
+                            counter-increment: step;
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-weight: bold;
+                            background-color: var(--yellow);
+                            border-radius: 50%;
+                            margin: 10px auto;
+                        }
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 5px;
+                            display: block;
+                            background-color: var(--yellow);
+                            position: absolute;
+                            left: -50%;
+                            top: 38px;
+                            z-index: -1;
+                        }
+                        &:first-child::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .box-bottom {
+                @include d-flex(space-between, none);
+                border-top: 1px solid var(--dark-light);
+                line-height: 1.9;
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                }
+                .info-buyer {
+                    width: 60%;
+                    font-size: 18px;
+                    padding: 35px 0px 0px 0px;
+                    line-height: 2;
+                    .cart-code {
+                        padding: 15px 40px;
+                    }
+                    .box {
+                        @include d-flex(space-between, none);
+                        padding: 20px 0px;
+                        &>div {
+                            width: 50%;
+                            &.address {
+                                padding-left: 15px;
+                            }
+                        }
+                        .info {
+                            .title {
+                                // padding: 15px 0px 10px 0px;
+                            }
+                            .content-group {
+                                .label {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                    .btn-show {
+                        display: none;
+                    }
+                }
+                #modal-product {
+                    /*css box-product modal*/
+                    .box-product {
+                        width: 100%;
+                        display: block;
+                        padding: 0px 15px;
+                        .products {
+                            height: 70vh;
+                            overflow: auto;
+                        }
+                    }
+                }
+                .box-product {
+                    padding: 15px;
+                    width: 40%;
+                    .title {
+                        font-size: 24px;
+                        text-align: center;
+                        padding: 10px 0px;
+                    }
+                    .products {
+                        display: block;
+                        .product-item {
+                            @include d-flex(space-between, center, nowrap);
+                            margin-bottom: 20px;
+                            .product-thumbnail {
+                                position: relative;
+                                display: block;
+                                width: 100px;
+                                height: 100px;
+                            }
+                            .product-info {
+                                width: 280px;
+                                .product-title {
+                                    @include num_text_row(2);
+                                }
+                            }
+                        }
+                    }
+                    .statistical {
+                        padding: 15px 0px;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}
